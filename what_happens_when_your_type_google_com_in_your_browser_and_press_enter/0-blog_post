@@ -1,0 +1,51 @@
+What happens when you type https://www.google.com in your browser and press Enter?
+
+--------------------------------------------------
+
+1. DNS REQUEST
+The browser first asks DNS to translate www.google.com into an IP address.
+
+--------------------------------------------------
+
+2. TCP CONNECTION
+The browser connects to the server using TCP/IP and establishes a reliable connection (3-way handshake).
+
+--------------------------------------------------
+
+3. FIREWALL
+Firewalls check the request and block unsafe or unwanted traffic before it reaches the servers.
+
+--------------------------------------------------
+
+4. HTTPS / SSL
+The browser and server establish a secure encrypted connection using SSL/TLS so data is protected.
+
+--------------------------------------------------
+
+5. LOAD BALANCER
+A load balancer receives the request and sends it to one available server to distribute traffic evenly.
+
+--------------------------------------------------
+
+6. WEB SERVER
+The web server (like Nginx) receives the request:
+- Serves static files directly
+- Sends dynamic requests to the application server
+
+--------------------------------------------------
+
+7. APPLICATION SERVER
+The application server runs the website logic and processes the request.
+
+--------------------------------------------------
+
+8. DATABASE
+If needed, the application server asks the database for data and receives a response.
+
+--------------------------------------------------
+
+9. RESPONSE
+The response goes back:
+Database → Application Server → Web Server → Browser
+
+The browser then displays the page.
